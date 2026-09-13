@@ -1,0 +1,34 @@
+HELVETICSHOT '84 - SPIELANLEITUNG v0.5.1
+Stand: 12.09.2026, 16:08
+
+ZIEL
+Zerstoere die gegnerischen Drohnen, sammle Punkte und ueberstehe moeglichst viele Level.
+Jeder 5. Level ist ein Boss-Level.
+
+STEUERUNG
+PC: Pfeil links/rechts oder A/D. SPACE = Feuer. P/ESC = Pause.
+Touch: links/rechts und FIRE. Gamepad: Stick/D-Pad und A/B/Trigger.
+
+NEUES STANDARD-RAUMSCHIFF
+V0.5.1 verwendet das eigenstaendige HELVETIC DART Design. Das 11x6-Pixelraster und
+die feste 44x24-px-Hitbox bleiben unveraendert. Ein Skin veraendert keine Spielwerte.
+Auch Standard-Gegner, Bonus-Raumschiff und Boss wurden visuell neu gestaltet.
+
+EIGENE DESIGNS
+Im DESIGNER kann das Schiff Pixel fuer Pixel gestaltet werden. STANDARD laedt das
+HELVETIC DART Design. Eigene Designs koennen gespeichert, exportiert und importiert werden.
+Die Grafik darf kleiner oder transparenter wirken, die feste Hitbox bleibt trotzdem gleich.
+
+HIGHSCORE
+Der LOCAL HI wird nur in diesem Browser/Geraet gespeichert. RESET loescht ihn nach
+einer Sicherheitsabfrage. Ein anderer Browser oder ein anderes Geraet hat einen eigenen Highscore.
+
+LEVEL
+Ab Level 6 beginnen leichte asynchrone Bewegungen einzelner Alienreihen. Der Effekt
+wird in hoeheren Leveln staerker. Die Muster sollen lesbar und fair bleiben.
+
+POWER-UPS
+R = RAPID, S = SHIELD, 3 = SPREAD.
+
+BATTLE
+Online-Battle ist in v0.5.1 noch nicht aktiv. Die Architektur wird weiter vorbereitet.

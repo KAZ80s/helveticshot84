@@ -1,7 +1,6 @@
 {
-  "name": "HELVETICSHOT ’84",
-  "version": "0.5.1",
-  "phase": "Redesign & Singleplayer expansion",
-  "multiplayer": false,
-  "license": "MIT"
+  "name": "HELVETICSHOT '84",
+  "version": "0.5.2",
+  "date": "2026-09-13",
+  "focus": "Balancing levels 6-10 and local play statistics"
 }

@@ -20,3 +20,7 @@ Open-source retro browser arcade game.
 
 ## Open source
 MIT License. Never place passwords, private API keys or other secrets in client-side files.
+
+
+## v0.5.2
+Balancing Level 6–10 und lokale Teststatistik mit separatem Reset.

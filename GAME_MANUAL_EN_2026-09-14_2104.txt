@@ -1,0 +1,2 @@
+HELVETICSHOT '84 v0.5.3
+SWISS background default; SPACE/CUSTOM selectable. Start levels 5/10/15/20/25 unlock after 10 completions each. Boss designer. Trailer demo. ?lang=en/de for Cloudflare language handoff. Level-15 boss rebalanced.

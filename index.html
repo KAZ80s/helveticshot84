@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#000000">
-  <title>HELVETICSHOT ’84 v0.5.2</title>
+  <title>HELVETICSHOT ’84 v0.5.3</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,16 +23,22 @@
 
     <section id="startScreen" class="screen active">
       <h1>HELVETIC<br><span>SHOT</span> ’84</h1>
-      <p class="subtitle">v0.5.2 • BALANCED WAVE</p>
+      <p class="subtitle">v0.5.3 • SWISS DEMO</p>
       <div class="settingsGrid">
-        <label>START-LEVEL
-          <select id="startLevel">
-            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="5">5</option>
-          </select>
+        <label><span id="settingsStartLabel">START-LEVEL</span>
+          <select id="startLevel"><option value="1">1</option></select>
         </label>
-        <label>SOUND <input id="soundToggle" type="checkbox" checked></label>
+        <label><span id="settingsSoundLabel">SOUND</span> <input id="soundToggle" type="checkbox" checked></label>
+        <label><span id="settingsLanguageLabel">SPRACHE</span>
+          <select id="languageSelect"><option value="de">DE</option><option value="en">EN</option></select>
+        </label>
+        <label><span id="settingsBackgroundLabel">HINTERGRUND</span>
+          <select id="backgroundSelect"><option value="swiss">SWISS</option><option value="space">SPACE</option><option value="custom">CUSTOM</option></select>
+        </label>
       </div>
+      <div id="startLevelProgress" class="unlockProgress">FREISCHALTUNG: L5 0/10 · L10 0/10 · L15 0/10 · L20 0/10 · L25 0/10</div>
       <button id="startButton" class="arcadeButton">SPIEL STARTEN</button>
+      <button id="demoButton" class="arcadeButton secondary">TRAILER DEMO</button>
       <button id="manualButton" class="arcadeButton secondary">SPIELANLEITUNG</button>
       <button id="designerButton" class="arcadeButton secondary">DESIGNER</button>
       <div class="localHighscore">LOCAL HI <span id="menuHighScore">000000</span> <button id="resetHighScoreButton" class="miniButton">RESET</button></div><div id="statsLine" class="statsLine">SPIELE 0 · Ø LEVEL 0.0 · BEST 0 · TOD --</div><button id="resetStatsButton" class="miniButton">STATISTIK RESET</button>
@@ -41,14 +47,8 @@
 
     <section id="manualScreen" class="screen scrollScreen">
       <div class="panel wide">
-        <h2>SPIELANLEITUNG</h2>
-        <div class="manualText">
-          <h3>Ziel / Goal</h3><p>Zerstöre alle Invaders, sammle Punkte und überstehe möglichst viele Level. Jeder 5. Level ist ein Boss-Level.</p>
-          <h3>Steuerung</h3><p>PC: ←/→ oder A/D, SPACE = Feuer, P/ESC = Pause. Touch: ◀/▶ und FIRE. Gamepad: Stick/D-Pad und A/B/Trigger.</p>
-          <h3>Power-ups</h3><p><b>R</b> Rapid = höhere Feuerrate. <b>S</b> Shield = absorbiert einen Treffer. <b>3</b> Spread = Dreifachschuss.</p>
-          <h3>Eigene Designs</h3><p>Im Designer kannst du dein Schiff, drei Invader-Skins und den Hintergrund gestalten. Die Grafik ändert <b>nie</b> Hitbox, Geschwindigkeit, Schussrate oder andere Spielwerte. Für faire Battles bleiben diese Werte fest.</p>
-          <h3>Export / Import</h3><p>Mit DESIGN EXPORTIEREN erhältst du eine JSON-Datei. Andere Spieler können diese über DESIGN IMPORTIEREN laden. Es werden nur optische Einstellungen übertragen.</p>
-        </div>
+        <h2 id="manualTitle">SPIELANLEITUNG</h2>
+        <div id="manualText" class="manualText"></div>
         <button id="manualBackButton" class="arcadeButton">ZURÜCK</button>
       </div>
     </section>
@@ -59,6 +59,7 @@
         <div class="designerTabs">
           <button class="tabButton active" data-tab="ship">RAUMSCHIFF</button>
           <button class="tabButton" data-tab="invader">INVADERS</button>
+          <button class="tabButton" data-tab="boss">BOSS</button>
           <button class="tabButton" data-tab="background">HINTERGRUND</button>
         </div>
 
@@ -81,8 +82,17 @@
           <button id="invaderResetButton" class="miniButton">STANDARD</button>
         </div>
 
+        <div id="bossTab" class="designerTab">
+          <p class="smallNote">15×6 Pixelraster. Nur die Optik ist frei; Hitbox, HP, Geschwindigkeit und Feuerwerte bleiben spielbestimmt.</p>
+          <div id="bossGrid" class="pixelGrid bossGrid"></div>
+          <div class="palette" id="bossPalette"></div>
+          <button id="bossMirrorButton" class="miniButton">SPIEGELN</button>
+          <button id="bossResetButton" class="miniButton">STANDARD</button>
+        </div>
+
         <div id="backgroundTab" class="designerTab">
           <div class="controlList">
+            <label>Theme <select id="bgTheme"><option value="swiss">SWISS (STANDARD)</option><option value="space">SPACE</option><option value="custom">CUSTOM</option></select></label>
             <label>Hintergrundfarbe <input id="bgColor" type="color" value="#000000"></label>
             <label>Sternfarbe <input id="starColor" type="color" value="#bafcff"></label>
             <label>Sterndichte <input id="starDensity" type="range" min="20" max="180" value="100"></label>
@@ -109,13 +119,13 @@
 
     <div id="touchControls" class="touchControls"><div class="touchMove"><button id="leftButton">◀</button><button id="rightButton">▶</button></div><button id="fireButton" class="fireButton">FIRE</button></div>
     <button id="pauseButton" class="pauseButton">Ⅱ</button>
-    <div id="powerStatus" class="powerStatus">POWER: --</div><div id="gamepadStatus" class="gamepadStatus">GAMEPAD: --</div>
+    <div id="demoBadge" class="demoBadge">DEMO MODE</div><div id="powerStatus" class="powerStatus">POWER: --</div><div id="gamepadStatus" class="gamepadStatus">GAMEPAD: --</div>
   </div>
 </main>
 <script type="module" src="js/main.js"></script>
 
 <div id="battlePrepInfo" class="battlePrepInfo" aria-hidden="true">
-  V0.5.2 · BALANCING · LOCAL STATS
+  V0.5.3 · SWISS BACKGROUND · DEMO MODE
 </div>
 </body>
 </html>

@@ -1,0 +1,2 @@
+HELVETICSHOT '84 v0.5.3
+SWISS-Hintergrund Standard; SPACE/CUSTOM wählbar. Start-Level 5/10/15/20/25 nach je 10 Abschlüssen. Boss im Designer. Trailer-Demo. ?lang=en/de für Cloudflare-Sprachübergabe. Level-15-Boss entschärft.

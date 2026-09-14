@@ -22,5 +22,14 @@ Open-source retro browser arcade game.
 MIT License. Never place passwords, private API keys or other secrets in client-side files.
 
 
-## v0.5.2
+## v0.5.3
 Balancing Level 6–10 und lokale Teststatistik mit separatem Reset.
+
+## v0.5.3
+Swiss-Hintergrund als Standard, auswählbare Themes, Boss-Designer, Start-Level-Freischaltung,
+Trailer-Demo, DE/EN-Sprachübergabe über `?lang=en|de` und Level-15-Boss-Balancing.
+
+### Cloudflare
+Die englische Sprachkachel bzw. Sprachwahl soll den Spiel-Link mit `?lang=en` öffnen.
+Deutsch verwendet `?lang=de`. Das Spiel speichert die Sprache lokal, kann aber jederzeit
+im Startbildschirm umgestellt werden.

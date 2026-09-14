@@ -1,1 +1,0 @@
-HELVETICSHOT '84 v0.5.2 – Levels 6–10 smoothed; local high score and local play statistics with separate reset.

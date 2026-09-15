@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#000000">
-  <title>HELVETICSHOT ’84 v0.5.3</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; worker-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()">
+  <title>HELVETICSHOT ’84 v0.5.4.1</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,7 +26,7 @@
 
     <section id="startScreen" class="screen active">
       <h1>HELVETIC<br><span>SHOT</span> ’84</h1>
-      <p class="subtitle">v0.5.3 • SWISS DEMO</p>
+      <p class="subtitle">v0.5.4.1 • TACTICAL TEST LAB</p>
       <div class="settingsGrid">
         <label><span id="settingsStartLabel">START-LEVEL</span>
           <select id="startLevel"><option value="1">1</option></select>
@@ -37,6 +40,9 @@
         </label>
       </div>
       <div id="startLevelProgress" class="unlockProgress">FREISCHALTUNG: L5 0/10 · L10 0/10 · L15 0/10 · L20 0/10 · L25 0/10</div>
+      <div class="testLab"><b>DEV TEST MODE</b>
+<label>CONCEPT <select id="testMode"><option value="standard">STANDARD</option><option value="burst">BURST</option><option value="diver">DIVER</option><option value="both">BURST + DIVER</option><option value="random">RANDOM</option></select></label>
+<label>INTENSITY <select id="testIntensity"><option value="low">LOW</option><option value="medium" selected>MEDIUM</option><option value="high">HIGH</option></select></label></div>
       <button id="startButton" class="arcadeButton">SPIEL STARTEN</button>
       <button id="demoButton" class="arcadeButton secondary">TRAILER DEMO</button>
       <button id="manualButton" class="arcadeButton secondary">SPIELANLEITUNG</button>

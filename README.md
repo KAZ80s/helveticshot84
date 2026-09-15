@@ -33,3 +33,7 @@ Trailer-Demo, DE/EN-Sprachübergabe über `?lang=en|de` und Level-15-Boss-Balanc
 Die englische Sprachkachel bzw. Sprachwahl soll den Spiel-Link mit `?lang=en` öffnen.
 Deutsch verwendet `?lang=de`. Das Spiel speichert die Sprache lokal, kann aber jederzeit
 im Startbildschirm umgestellt werden.
+
+
+## Security v0.5.4.1
+See `SECURITY.md`. Design imports are strictly validated and size-limited. Competitive Battle/Tournament state must later be server-authoritative.

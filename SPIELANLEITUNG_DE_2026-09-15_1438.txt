@@ -1,0 +1,2 @@
+HELVETICSHOT '84 v0.5.4
+DEV TEST MODE: STANDARD / BURST / DIVER / BURST+DIVER / RANDOM; LOW/MEDIUM/HIGH. Boss L5 engerer Streuwinkel. Trailer L15 Schiff sichtbar. Eigenständigeres Grafikdesign.

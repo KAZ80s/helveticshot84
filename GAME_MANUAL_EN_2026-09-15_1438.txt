@@ -1,0 +1,2 @@
+HELVETICSHOT '84 v0.5.4
+DEV TEST MODE: STANDARD / BURST / DIVER / BURST+DIVER / RANDOM; LOW/MEDIUM/HIGH. Boss L5 narrower spread. Trailer L15 ship visible. More distinctive default art.

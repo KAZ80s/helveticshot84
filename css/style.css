@@ -11,3 +11,5 @@ font:10px "Courier New",monospace;color:#39ff14;opacity:.45;pointer-events:none}
 .bossGrid .bossPixelCell{width:18px;height:18px;border:1px solid rgba(255,255,255,.12);cursor:pointer}
 .demoBadge{display:none;position:absolute;z-index:13;left:50%;transform:translateX(-50%);top:40px;color:#fff200;border:1px solid #fff200;background:rgba(0,0,0,.72);padding:4px 8px;font-size:10px;letter-spacing:.12em}
 @media(max-width:700px){.bossGrid{transform:scale(.82);transform-origin:top center;margin-bottom:-22px}.unlockProgress{font-size:9px}}
+
+.testLab{margin:10px auto;padding:8px;border:1px dashed #fff200;max-width:520px;font-size:10px;color:#fff200}.testLab label{margin:4px 8px;display:inline-block}

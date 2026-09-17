@@ -1,0 +1,7 @@
+HELVETICSHOT '84 v0.5.4.2
+TEST MODES: STANDARD / BURST / DIVER / BURST+DIVER / RANDOM.
+BURST: the marked unit explodes ONLY when destroyed by the player. Visible penetrating fragments hit friend and foe.
+DIVER: continuous downward attack flight with lateral movement and firing.
+LOW/MEDIUM/HIGH are deliberately distinct. Active test mode is shown in the HUD.
+Bunkers are now red/white Helvetic Shields with a Swiss cross.
+v0.5.4.1 security hardening remains active.

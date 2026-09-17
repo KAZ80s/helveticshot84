@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.5.4.2 — 2026-09-15
+- BURST rebuilt: a clearly marked Burst Unit is selected; no burst occurs until the PLAYER destroys that unit.
+- BURST explosion now launches clearly visible glowing/trailing penetrating projectiles.
+- Burst projectiles can destroy enemy units and hit the player; enemy hits do not stop them.
+- No-fire invariant: BURST cannot clear a level without player activation.
+- DIVER rebuilt as a continuous attack flight with downward movement, lateral wave movement and visible fire.
+- LOW/MEDIUM/HIGH now use deliberately separated event frequency, projectile count/speed, diver speed/amplitude/fire rate and maximum active divers.
+- BURST + DIVER state separation: a unit cannot be both special types at once.
+- Hard cap on special projectiles to prevent runaway object creation/freezes.
+- Fixed special-projectile player collision path that could call a non-existent method and halt the game.
+- Test mode and intensity shown in the HUD.
+- Green bunkers replaced by red Helvetic shield silhouettes with a white Swiss cross.
+- v0.5.4.1 security hardening retained.
+
+# Changelog
+
 ## v0.5.4.1 SECURITY FIX — 2026-09-15
 - Separate cybersecurity review completed.
 - Hardened JSON design import and local design storage.

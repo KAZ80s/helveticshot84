@@ -1,0 +1,7 @@
+HELVETICSHOT '84 v0.5.4.2
+TESTMODI: STANDARD / BURST / DIVER / BURST+DIVER / RANDOM.
+BURST: markierte Unit explodiert NUR nach Abschuss durch den Spieler. Sichtbare, durchdringende Splitter treffen Freund und Feind.
+DIVER: echter Angriffsflug nach unten mit seitlicher Bewegung und Schüssen.
+LOW/MEDIUM/HIGH unterscheiden sich deutlich. Der aktive Testmodus steht im HUD.
+Bunker sind nun Helvetic Shields in Rot/Weiss mit Schweizerkreuz.
+Security-Härtungen aus v0.5.4.1 bleiben aktiv.

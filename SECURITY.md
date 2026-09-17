@@ -36,3 +36,10 @@ state and results must later be validated server-side.
 - BURST remains bounded by the existing projectile cap/lifetime filtering.
 - DIVER rewards use a fixed internal allow-list.
 - DEV test levels are fixed UI options and do not grant persistent unlock progress by themselves.
+
+## v0.5.4.4 review — 2026-09-17
+- No new external runtime dependency, network endpoint, credential, or secret.
+- Existing CSP, no-referrer policy, permissions restrictions, JSON validation/import limits, and local-server path containment retained.
+- New level-derived speed/chance calculations are numerically bounded with explicit caps.
+- DEV test levels remain a fixed allow-listed set in the UI and do not change the normal unlock system.
+- BURST projectile object cap and lifetime filtering retained.

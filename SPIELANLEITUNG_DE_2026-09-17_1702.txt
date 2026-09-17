@@ -1,0 +1,7 @@
+HELVETICSHOT '84 v0.5.4.4 – TESTHINWEISE
+• Schwierigkeit ab Level 21 wurde gestreckt; die frühere Bewegungsschärfe von etwa Level 24 liegt nun ungefähr bei Level 29.
+• Normale Alien-Schüsse: Geschwindigkeit ab Level 15 fixiert.
+• Boss-Schüsse: Geschwindigkeit ab Level 15 ebenfalls fixiert.
+• R / S / 3 erscheinen mit höheren Levels häufiger und fallen gleichzeitig etwas schneller.
+• DIVER-Abschuss gibt weiterhin garantiert R / S / 3.
+• DEV-Level: 1 / 4 / 5 / 9 / 10 / 14 / 15 / 19 / 20 / 24 / 25 / 29 / 30 / 34 / 35.

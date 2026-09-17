@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.5.4.4 — 2026-09-17
+- High-level formation-speed curve stretched: the former approximate Level-24 movement pressure is now reached around Level 29.
+- Normal alien projectile speed is capped at the Level-15 value from Level 15 onward.
+- Boss projectile speed is likewise capped at its Level-15 values; later boss difficulty may still increase through timing/patterns rather than projectile speed.
+- Normal R/S/3 drop chance rises gradually with level (about 10% early, capped near 22%).
+- R/S/3 falling speed also rises gradually with level, capped to remain collectible.
+- DIVER rewards retain their guaranteed R/S/3 drop and now use the same level-scaled falling speed.
+- Corrected DIVER's internal Triple Shot reward key to the existing `spread`/3 power-up.
+- DEV test levels extended to: 1 / 4 / 5 / 9 / 10 / 14 / 15 / 19 / 20 / 24 / 25 / 29 / 30 / 34 / 35.
+- BURST and DIVER core behavior unchanged.
+
+# Changelog
+
 ## v0.5.4.3 — 2026-09-17
 - BURST uses a randomly rotated 360-degree fragment pattern. Fragments can therefore travel toward the player by chance.
 - A player-shot DIVER guarantees one random reward: R (Rapid Fire), S (Shield), or 3 (Triple Shot).

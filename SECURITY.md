@@ -29,3 +29,10 @@ state and results must later be validated server-side.
 - BURST/DIVER units are mutually exclusive to avoid conflicting state.
 - Removed the failing special-projectile collision call path that could terminate the game loop.
 - No new external runtime dependencies, network connections, credentials or secrets added.
+
+## v0.5.4.3 review — 2026-09-17
+- No new external runtime dependency, endpoint, credential, or secret.
+- Existing CSP, no-referrer policy, permissions restrictions, JSON validation/import limits, and local-server path containment retained.
+- BURST remains bounded by the existing projectile cap/lifetime filtering.
+- DIVER rewards use a fixed internal allow-list.
+- DEV test levels are fixed UI options and do not grant persistent unlock progress by themselves.

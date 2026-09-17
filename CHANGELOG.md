@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.5.4.3 — 2026-09-17
+- BURST uses a randomly rotated 360-degree fragment pattern. Fragments can therefore travel toward the player by chance.
+- A player-shot DIVER guarantees one random reward: R (Rapid Fire), S (Shield), or 3 (Triple Shot).
+- DEV test start levels: 1 / 4 / 5 / 9 / 10 / 14 / 15 / 19 / 20 / 24 / 25.
+- STANDARD keeps the normal unlock-based level selector.
+- Previous gameplay safeguards and security hardening retained.
+
+# Changelog
+
 ## v0.5.4.2 — 2026-09-15
 - BURST rebuilt: a clearly marked Burst Unit is selected; no burst occurs until the PLAYER destroys that unit.
 - BURST explosion now launches clearly visible glowing/trailing penetrating projectiles.

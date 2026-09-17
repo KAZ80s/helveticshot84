@@ -1,0 +1,5 @@
+HELVETICSHOT '84 v0.5.4.3
+BURST: zufällig rotierte 360°-Splitter; Treffer Richtung Spieler sind möglich, aber nicht gezielt.
+DIVER: Spielerabschuss gibt immer zufällig R (Rapid Fire), S (Shield) oder 3 (Triple Shot).
+DEV TEST LEVEL: 1 / 4 / 5 / 9 / 10 / 14 / 15 / 19 / 20 / 24 / 25.
+STANDARD behält die normale Start-Level-Freischaltung.

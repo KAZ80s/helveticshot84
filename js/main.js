@@ -18,3 +18,5 @@ const refreshLocalHi=()=>{if(ui.menuHighScore)ui.menuHighScore.textContent=Strin
 ui.resetHighScoreButton?.addEventListener("click",()=>{if(confirm(game.language==="en"?"Reset local high score on this device/browser?":"Lokalen Highscore auf diesem Gerät/Browser wirklich zurücksetzen?")){game.highScore=0;localStorage.removeItem("helveticshotHighScore");localStorage.removeItem("retroInvadersHighScore");refreshLocalHi();game.syncHud()}});
 ui.resetStatsButton?.addEventListener("click",()=>{if(confirm(game.language==="en"?"Reset local game statistics?":"Lokale Spielstatistik wirklich zurücksetzen?")){game.stats={games:0,totalLevel:0,bestLevel:0,deaths:{},lastScore:0,totalSeconds:0};game.saveStats();ui.setStats(game.stats,game.language)}});
 addEventListener("storage",refreshLocalHi);applyLanguage(lang);refreshProgress();
+
+window.addEventListener("load",()=>setTimeout(()=>{if(game.state==="menu")game.startDemo(true)},250));

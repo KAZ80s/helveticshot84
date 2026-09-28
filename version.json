@@ -1,6 +1,7 @@
 {
   "name": "HELVETICSHOT '84",
-  "version": "0.5.4.4",
+  "version": "0.6.0-phase6.1",
   "date": "2026-09-17",
-  "focus": "high-level balancing, L15 projectile-speed caps, progressive power-ups, DEV levels through 35"
+  "base": "v0.5.4.4",
+  "focus": "local Battle core prototype"
 }

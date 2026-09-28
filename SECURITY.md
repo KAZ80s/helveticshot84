@@ -43,3 +43,10 @@ state and results must later be validated server-side.
 - New level-derived speed/chance calculations are numerically bounded with explicit caps.
 - DEV test levels remain a fixed allow-listed set in the UI and do not change the normal unlock system.
 - BURST projectile object cap and lifetime filtering retained.
+
+## Phase 6.1 local Battle prototype — 2026-09-17
+- Battle prototype is local-only and introduces no network/API/WebSocket endpoint.
+- No remote player data is accepted.
+- No competitive result is persisted or trusted.
+- Existing CSP and browser restrictions retained.
+- Phase 6.4 network work must be server-authoritative before online Battle is enabled.

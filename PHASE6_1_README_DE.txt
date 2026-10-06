@@ -22,3 +22,7 @@ SECURITY:
 Phase 6.1 ist vollständig lokal. Es wurden keine Netzwerkendpunkte, WebSockets,
 Accounts oder serverseitigen Funktionen ergänzt. Damit entsteht in 6.1 noch keine
 neue Online-Angriffsfläche.
+
+
+v0.6.1 MENÜ-FIX:
+Hauptmenü zeigt jetzt zwei gleichwertige Startoptionen: SINGLEPLAYER und ⚔ BATTLE – 2 SPIELER. Darunter steht die Battle-Steuerung direkt sichtbar.

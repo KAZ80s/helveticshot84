@@ -50,3 +50,5 @@ state and results must later be validated server-side.
 - No competitive result is persisted or trusted.
 - Existing CSP and browser restrictions retained.
 - Phase 6.4 network work must be server-authoritative before online Battle is enabled.
+
+- v0.6.1: menu/UI fix only; Battle remains local-only, no network/API/WebSocket added.

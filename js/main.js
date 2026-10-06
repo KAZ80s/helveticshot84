@@ -20,7 +20,7 @@ ui.resetStatsButton?.addEventListener("click",()=>{if(confirm(game.language==="e
 addEventListener("storage",refreshLocalHi);applyLanguage(lang);refreshProgress();
 
 const battlePrototype=new BattlePrototype(canvas,store);
-ui.battleButton?.addEventListener("click",()=>{
+document.getElementById("battleButton")?.addEventListener("click",()=>{
   document.getElementById("menu")?.classList.add("hidden");
   document.getElementById("battleOverlay")?.classList.remove("hidden");
   battlePrototype.start();

@@ -13,3 +13,8 @@ font:10px "Courier New",monospace;color:#39ff14;opacity:.45;pointer-events:none}
 @media(max-width:700px){.bossGrid{transform:scale(.82);transform-origin:top center;margin-bottom:-22px}.unlockProgress{font-size:9px}}
 
 .testLab{margin:10px auto;padding:8px;border:1px dashed #fff200;max-width:520px;font-size:10px;color:#fff200}.testLab label{margin:4px 8px;display:inline-block}
+
+.modeChoice{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.battleButton{border-color:#ff2bd6!important;color:#fff!important;box-shadow:0 0 16px rgba(255,43,214,.55)!important}
+.battleHint{margin:8px 0 14px;color:#fff200;font-size:12px;line-height:1.35}
+@media(max-width:620px){.modeChoice{grid-template-columns:1fr}}

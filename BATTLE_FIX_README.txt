@@ -1,0 +1,1 @@
+v0.6.2: Behoben: nicht definierte canvas-Variable verhinderte JavaScript-Initialisierung und Button-Reaktion. Battle zeichnet nun exklusiv auf dem Spiel-Canvas; ESC bringt das Hauptmenü zurück. Battle ist lokal, ohne Netzwerk.

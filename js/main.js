@@ -19,9 +19,13 @@ ui.resetHighScoreButton?.addEventListener("click",()=>{if(confirm(game.language=
 ui.resetStatsButton?.addEventListener("click",()=>{if(confirm(game.language==="en"?"Reset local game statistics?":"Lokale Spielstatistik wirklich zurücksetzen?")){game.stats={games:0,totalLevel:0,bestLevel:0,deaths:{},lastScore:0,totalSeconds:0};game.saveStats();ui.setStats(game.stats,game.language)}});
 addEventListener("storage",refreshLocalHi);applyLanguage(lang);refreshProgress();
 
-const battlePrototype=new BattlePrototype(canvas,store);
+const battlePrototype=new BattlePrototype(document.getElementById("gameCanvas"),store);
+game.battleActive=false;
+battlePrototype.onExit=()=>{game.battleActive=false;ui.showMenu();};
 document.getElementById("battleButton")?.addEventListener("click",()=>{
-  document.getElementById("menu")?.classList.add("hidden");
+  ui.hideScreens();
+  ui.gameShell.classList.add("playing");
+  game.battleActive=true;
   document.getElementById("battleOverlay")?.classList.remove("hidden");
   battlePrototype.start();
 });

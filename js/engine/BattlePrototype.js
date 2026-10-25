@@ -1,4 +1,4 @@
-const hit=(a,b)=>a.x<b.x+b.width&&a.x+a.width>b.x&&a.y<b.y+b.height&&a.y+a.height>b.y;
+const hit=(a,b)=>a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y;
 export class BattlePrototype{
  constructor(canvas,store){this.canvas=canvas;this.ctx=canvas.getContext("2d",{alpha:false});this.store=store;this.keys=new Set;this.running=false;this.raf=0;this.last=0;this.onKeyDown=e=>{if(["ArrowLeft","ArrowRight","ArrowUp","ArrowDown"," ","Enter"].includes(e.key))e.preventDefault();this.keys.add(e.code);if(e.code==="Escape")this.stop()};this.onKeyUp=e=>this.keys.delete(e.code)}
  start(){if(this.running)return;this.running=true;this.reset();window.addEventListener("keydown",this.onKeyDown,{passive:false});window.addEventListener("keyup",this.onKeyUp);this.last=performance.now();this.loop(this.last)}

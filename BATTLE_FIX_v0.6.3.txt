@@ -1,0 +1,1 @@
+Fix: collision detection used width/height but Battle entities use w/h. Now enemy and both player hits are detected. Four regression tests included. Singleplayer engine unchanged. Battle remains local only.

@@ -1,0 +1,1 @@
+Phase 6.3: Battle HUD, Start-Countdown (Enter überspringt), Match-Uhr, Treffer- und Alien-Zähler, Ergebnisbildschirm, Revanchesteuerung R. Battle bleibt lokal, kein Room-Code oder Netzwerk. Test: Countdown, Treffer, Sieg, R, ESC, Singleplayer.

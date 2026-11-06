@@ -54,3 +54,5 @@ state and results must later be validated server-side.
 - v0.6.1: menu/UI fix only; Battle remains local-only, no network/API/WebSocket added.
 
 Phase 6.2: local-only UI/visual state and rematch key; no new network endpoints or persisted competitive scores.
+
+Phase 6.3: local UI only; no network calls or Battle score persistence.

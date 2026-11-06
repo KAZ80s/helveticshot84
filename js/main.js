@@ -21,11 +21,11 @@ addEventListener("storage",refreshLocalHi);applyLanguage(lang);refreshProgress()
 
 const battlePrototype=new BattlePrototype(document.getElementById("gameCanvas"),store);
 game.battleActive=false;
-battlePrototype.onExit=()=>{game.battleActive=false;ui.showMenu();};
+battlePrototype.onExit=()=>{game.battleActive=false;document.getElementById("gameShell")?.classList.remove("battleMode");ui.showMenu();};
 document.getElementById("battleButton")?.addEventListener("click",()=>{
   ui.hideScreens();
   ui.gameShell.classList.add("playing");
-  game.battleActive=true;
+  game.battleActive=true;ui.gameShell.classList.add("battleMode");
   document.getElementById("battleOverlay")?.classList.remove("hidden");
   battlePrototype.start();
 });

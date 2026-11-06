@@ -52,3 +52,5 @@ state and results must later be validated server-side.
 - Phase 6.4 network work must be server-authoritative before online Battle is enabled.
 
 - v0.6.1: menu/UI fix only; Battle remains local-only, no network/API/WebSocket added.
+
+Phase 6.2: local-only UI/visual state and rematch key; no new network endpoints or persisted competitive scores.
